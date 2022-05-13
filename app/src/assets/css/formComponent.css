@@ -1,0 +1,233 @@
+.custom-container {
+  padding: 0 5em;
+}
+
+:root {
+  --form-back: #fff;
+  --input-back: #faf3ff;
+  --my-space: #ffc543;
+}
+
+.banner {
+  margin: 5rem 0;
+}
+
+.form-image {
+  width: 100%;
+  max-width: 631px;
+}
+
+.form-image img {
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  max-width: 630px;
+}
+
+form {
+  background: var(--form-back);
+  box-shadow: 0px -5px 0px #2ab0ff,
+    2.71605px 25.8025px 42px rgba(80, 80, 80, 0.26);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 629px;
+}
+
+.form-section {
+  padding: 4rem 3.2rem 3.2rem 3.2rem;
+}
+
+form input {
+  background: var(--input-back) !important;
+  /* opacity: 0.3; */
+  border-radius: 10px !important;
+  width: 100%;
+  max-width: 518px;
+  height: 50px;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #0e0d39;
+}
+
+.forgot-password a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  text-transform: capitalize;
+  color: #0e0d39;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+.login-buttons button:first-child {
+  font-weight: 700;
+  font-size: 20px;
+  background: transparent;
+  background: radial-gradient(
+      63.11% 63.11% at 31.97% 19.67%,
+      rgba(255, 255, 255, 0.7) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ffc543;
+
+  width: 100%;
+  max-width: 204px;
+  height: 55px;
+  border-radius: 25px;
+}
+
+.google-btn {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 2px solid #edd6ff !important;
+  border-radius: 15px !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 23px !important;
+  text-transform: capitalize;
+  color: #4285f4 !important;
+  padding: 0.8rem 1rem !important;
+  display: block;
+  align-items: center;
+  width: 100%;
+  width: 249px;
+  height: 55px;
+}
+.google-btn span {
+  font-weight: 600 !important;
+  text-align: left;
+  padding: 0 !important;
+  font-size: 16px !important;
+  width: 100% !important;
+  padding-top: 2px !important;
+}
+.login-buttons button:last-child {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 2px solid #edd6ff !important;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: #4285f4;
+  padding: 0.8rem 1rem;
+  display: block;
+  align-items: center;
+  width: 100%;
+  width: 249px;
+  height: 55px;
+}
+
+.login-buttons button:last-child img {
+  width: 21px;
+  height: 21px;
+  margin-right: 0.6rem;
+}
+
+.login-buttons span {
+  font-weight: 400;
+  font-size: 20px;
+  width: 20px;
+  height: 27px;
+}
+
+.create-link {
+  margin-top: 1rem;
+  background: var(--form-back);
+  border: 2px solid var(--input-back);
+  border-radius: 15px;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  max-width: 518px;
+  text-align: center;
+}
+
+.create-link span {
+  font-weight: 600;
+  font-size: 16px;
+  /* text-transform: capitalize; */
+  color: #0e0d39;
+}
+
+.create-link span a {
+  padding-left: 0.8rem;
+  text-decoration: underline;
+}
+
+/* mobile */
+@media only screen and (max-width: 1100px) {
+  .row {
+    display: block;
+  }
+
+  .col-md-4 {
+    margin: auto;
+    text-align: center;
+  }
+
+  .col-md-8 {
+    margin: auto;
+  }
+
+  .form {
+    margin-top: 3rem;
+  }
+
+  .custom-container {
+    padding: 0 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .login-buttons {
+    display: block;
+  }
+
+  .login-buttons button:first-child {
+    max-width: 100%;
+  }
+
+  .login-buttons button:last-child {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .login-buttons span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .create-link span {
+    font-weight: 900;
+    font-size: 13px;
+  }
+}

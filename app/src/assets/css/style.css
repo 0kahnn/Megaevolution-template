@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
+    url("../fonts/SpaceGrotesk-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Light.woff2") format("woff2"),
+    url("../fonts/SpaceGrotesk-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2"),
+    url("../fonts/SpaceGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("../fonts/SpaceGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("../fonts/SpaceGrotesk-SemiBold.woff2") format("woff2"),
+    url("../fonts/SpaceGrotesk-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-back: #fcf6ff;
+  --navs-a: #908da2;
+  --my-space: #ffc543;
+}
+
+.custom-container {
+  padding: 0 3rem;
+}
+
+body {
+  background: var(--body-back) !important;
+  font-family: "Space Grotesk";
+  overflow-x: hidden;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-item a {
+  color: var(--navs-a);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-item {
+  margin: 0 0.3rem;
+}
+
+.marketting {
+  font-weight: 400 !important;
+}
+
+.marketting span {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.myspace {
+  color: #0e0d39 !important;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: var(--my-space);
+  border-radius: 25px;
+  padding: 1.3rem 2.2rem !important;
+  margin: 0 0.6rem;
+  box-shadow: rgba(54, 54, 54, 0.3) 0px 8px 24px;
+}
+
+.flag {
+  width: 30px;
+  height: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 4px;
+  border-radius: 4px;
+}
+
+.mobile-view {
+  display: flex;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.auth-modal {
+  text-align: center;
+}
+
+.auth-modal .modal-content {
+  border-radius: 10px;
+}
+.auth-modal .modal-header {
+  padding-bottom: 0;
+  border: 0;
+}
+.auth-modal .modal-header span {
+  font-size: 34px !important;
+}
+.auth-modal .modal-header button {
+  background-color: transparent !important;
+}
+.auth-modal .modal-body {
+  padding-bottom: 4rem;
+}
+.auth-modal p,
+.auth-modal h3 {
+  color: #0e0d39 !important;
+}
+.auth-modal button {
+  border: 0;
+}
+.thankyou-image {
+  max-width: 150px;
+}
+.btn-blue {
+  color: white;
+  background-color: #0e0d39;
+  border-radius: 5px;
+}
+
+.btn-yellow {
+  background: radial-gradient(
+      63.11% 63.11% at 31.97% 19.67%,
+      rgba(255, 255, 255, 0.7) 0%,
+      rgba(255, 255, 255, 0) 69.79%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #ffc543;
+  box-shadow: 4px 38px 62px rgb(14 13 57 / 20%);
+  border-radius: 25px;
+  color: black;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: 1px solid #0e0d39 !important;
+  color: #0e0d39;
+  border-radius: 5px;
+}
+
+/*  */
+
+@media only screen and (max-width: 990px) {
+  .navbar-nav {
+    width: 100%;
+    display: block !important;
+  }
+  .mobile-view {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* misc */
+.mt-7 {
+  margin-top: 5rem;
+}
+
+/* overriden */
+@media (min-width: 576px) {
+  .wide-modal .modal-dialog {
+    max-width: 650px !important;
+  }
+}
