@@ -53,7 +53,7 @@ export class LoginRegister extends React.Component {
   render() {
     return (
       <div className="form-container" id="auth-form-container">
-        {this.state.isLogin && (
+        {this.state.isLogin ? (
           <div className="form">
             <form className="w-100">
               <div className="form-section">
@@ -72,19 +72,6 @@ export class LoginRegister extends React.Component {
 
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    className="form-control"
-                    onChange={(event) =>
-                      this.setState({ password: event.target.value })
-                    }
-                  />
-                </div>
-
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Confirm Password</label>
                   <input
                     type="password"
                     name="password"
@@ -136,11 +123,7 @@ export class LoginRegister extends React.Component {
               </div>
             </form>
           </div>
-        )}
-        <EmailVerificationModal />
-        <ThankYouModal />
-
-        {!this.state.isLogin && (
+        ) : (
           <div>
             <div className="form">
               <form className="w-100">
@@ -221,6 +204,8 @@ export class LoginRegister extends React.Component {
             </div>
           </div>
         )}
+        <EmailVerificationModal />
+        <ThankYouModal />
       </div>
     );
   }
